@@ -1,6 +1,7 @@
 name: Deploy Dist
- on: [push,workflow_dispatch]
- jobs:
+on: [push,workflow_dispatch]
+
+jobs:
     test:
         runs-on: ubuntu-latest
         steps:
@@ -17,7 +18,10 @@ name: Deploy Dist
 
               - name: Install Dependencies
                 run: npm ci
-                 
+
               - name: Run Tests
                 run: npm run test
-             
+                #added comment
+                
+    
+                
