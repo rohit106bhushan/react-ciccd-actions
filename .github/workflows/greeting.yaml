@@ -1,5 +1,4 @@
 name: Greeting
-# on: push
 on: 
     push:
         branches:
